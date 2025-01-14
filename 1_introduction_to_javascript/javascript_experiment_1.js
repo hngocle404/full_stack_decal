@@ -89,3 +89,22 @@ cities.forEach(function (city) {
 console.log('----------');
 
 cities.forEach(city => console.log(city));
+
+console.log('----------');
+
+const arr = [1, 2, 3, 4, 5];
+
+arr.forEach((item) => {
+    console.log(item);
+});
+
+console.log('----------');
+
+const items = [1, 29, 47];
+const squareOfItems = [];
+
+items.forEach(function (item) {
+    squareOfItems.push(item * item);
+});
+
+console.log(squareOfItems);
