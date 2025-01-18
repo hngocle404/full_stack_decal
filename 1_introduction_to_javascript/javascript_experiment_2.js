@@ -1,6 +1,9 @@
 // Date: 10 Jan 2025
 
-console.log('--Understanding global vs local scope--');
+
+// === Understanding global vs local scope ===
+
+console.log('\n--Understanding global vs local scope--');
 var carName = 'Chevrolet'
 function myFunction() {
     carName = 404;
@@ -9,8 +12,7 @@ console.log(carName);
 // The 404 should have no affect cos you cannot
 // change a global var from a local scope.
 
-
-console.log('--var vs. const vs. let--');
+console.log('\n--var vs. const vs. let--');
 
 if (true) {
     var name = 'Habibi';
@@ -18,5 +20,5 @@ if (true) {
     const favNumber = 404;
 }
 console.log('Name:', name)
-console.log(likes)
-console.log(favNumber)  
+// console.log(likes)
+// console.log(favNumber)
