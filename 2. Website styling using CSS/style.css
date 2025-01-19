@@ -1,12 +1,13 @@
 html {
     font-family: 'Inter Tight', 'Arial', sans-serif;
-    padding: calc(8px + 1.5625vw);
+    padding: calc(16px + 2vw);
 }
+
 
 h1 {
     color: #34224c;
     font-weight: 700;
-    font-size: 20px; /* Corrected property name */
+    font-size: 20px;  
 }
 
 h2 {
@@ -46,6 +47,13 @@ ol {
 ol > li > a, 
 ul > li > a {
     color: inherit !important;
+}
+
+ol > li > a:hover,
+ul > li > a:hover {
+  background-color: rgb(219, 245, 247);
+  border-radius: 4px;
+  padding: 3px 5px
 }
 
 li {
