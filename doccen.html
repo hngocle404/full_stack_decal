@@ -419,10 +419,8 @@ header {
 
 
 
-
 header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 2px 16px;
     background: white;
@@ -430,14 +428,40 @@ header {
     border-bottom: 1px solid rgb(241, 241, 241);
     width: 100%;
     box-sizing: border-box;
-    overflow: hidden; /* Add this to prevent overflow */
+    overflow: hidden;
+    justify-content: space-between; /* Space between items */
+}
+
+header .logo {
+    height: 30px;
+    width: auto;
 }
 
 .search-bar {
-    flex-grow: 1; /* Changed from 2 to 1 */
-    margin: 0px 20px;
-    max-width: 500px; /* Add a max-width */
+    flex-grow: 1; /* Take available space */
+    max-width: 500px;
+    margin: 0 20px;
 }
+
+.top-bar-icons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.top-bar-icons img {
+    height: 20px;
+    width: auto;
+}
+
+header .avatar {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 0px !important;  
+}
+
+
 </style>
 
 
@@ -462,29 +486,37 @@ header {
 
 
 <body>
-<header>
-    <img src="logo.png" style="height: 30px; width: auto;"> <!-- Fixed height -->
+    
+
+    <header>
+    <img src="logo.png" class="logo"> <!-- Logo -->
+    
     <div class="search-bar">
         <input type="text" placeholder="Search...">
     </div>
-    <img src="Screenshot%202025-01-21%20004948.png" style="height: 30px; width: auto;"> <!-- Added width: auto -->
+    
+    <img src="Screenshot%202025-01-21%20004948.png" style="height: 30px; width: auto;"> <!-- Image next to search bar -->
+    
     <div class="top-bar-icons">
         <img src="bell.png" style="height: 20px; width: auto;">
         <img src="align-justify.png" style="height: 20px; width: auto;">
-        <img src="settings.png" style="height: 20px; width: auto;">
     </div>
-    <img src="ava.jpg" style="height: 40px; width: 40px; border-radius: 50%;"> <!-- Fixed dimensions -->
+    
+    <img src="ava.jpg" class="avatar"> <!-- Avatar with specific class for styling -->
 </header>
 
-    <div class="everything_below_header">
-        <div class="left_navigation_bar">
-            <img src="Layer%205.png" style="width: 40%; opacity: 100%;">
-            <img src="library-big.png" style="width: 50%; opacity: 30%;">
-            <img src="globe.png" style="width: 50%; opacity: 30%;">
-            <img src="users%20(2).png" style="width: 50%; opacity: 30%;">
-        </div>
 
-        <div class="middle_content">
+
+<div class="everything_below_header">
+    <div class="left_navigation_bar">
+        <img src="Layer%205.png" style="width: 40%; opacity: 100%;">
+        <img src="library-big.png" style="width: 50%; opacity: 30%;">
+        <img src="globe.png" style="width: 50%; opacity: 30%;">
+        <img src="users%20(2).png" style="width: 50%; opacity: 30%;">
+        <img src="settings.png" style="width: 50%; opacity: 30%;">
+    </div>
+
+    <div class="middle_content">
 
 
 
