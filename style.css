@@ -254,9 +254,9 @@
 
 .knowledge-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-bottom: 20px; }
 
-.course-card { border: 1px solid lightgrey; border-radius: 8px; padding: 10px 16px 16px 16px; background: white; }
+.course-card { border: 1px solid lightgrey; border-radius: 8px; padding: 8px 16px 16px 16px; background: white; }
 
-.instructor-info { display: flex; align-items: center; gap: 10px; margin-bottom: 7px; }
+.instructor-info { display: flex; align-items: center; gap: 10px; margin-bottom: 7px; margin-top: ;}
 
 .instructor-info img { width: 35px; height: 35px; border-radius: 50%; }
 
