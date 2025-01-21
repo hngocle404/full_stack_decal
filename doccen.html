@@ -12,14 +12,16 @@
 
     @charset "utf-8";
 
-@import url("https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
 
 :root { 
     --Other-Upgrade-account: #FFD978; 
     --Other-White: #FFF; 
 }
 
-
+        .right-icons {
+            display: flex;
+            gap: 16px;
+        }
 
 </style>
 
@@ -34,13 +36,18 @@
 
 
 
-
-
-
-
-
-    
-
+<header style="display: flex; justify-content: space-between; align-items: center; padding: 5px 5px 3px 5px; border-bottom: 1px solid lightgray;">
+    <img src="logo.png" style="height: 35px; width: auto; margin-left: 5px;">
+    <div>
+        <input type="text" placeholder="Search..." style="width: 600px; padding: 10px 16px; background-color: rgb(241, 241, 241); border: none; border-radius: 100px; height: max-content;">
+    </div>
+    <div style="display: flex; gap: 10px; align-items: center;">
+        <img src="Screenshot%202025-01-21%20004948.png" style="opacity: 100%; height: 30px; width: auto;">
+        <img src="align-justify.png" style="opacity: 40%; height: 20px; width: auto;">
+        <img src="bell.png" style="opacity: 40%; height: 20px; width: auto;">
+        <img src="ava.jpg" style="opacity: 100%; border-radius: 50%; width: 40px; height: 40px;">
+    </div>
+</header>
 
 
 
@@ -75,14 +82,15 @@
 
         <!-- News Type A (Major Post) -->
         <div class="news-type-a">
-            <img src="news.jpg" alt="News">
-            <div class="post-title">Childhood Vaccination Rates, a Rare Health Bright Spot in Struggling States, Are Slipping</div>
+            <img src="news.jpg" >
+            <div class="course-title" style="margin-top:7px">Childhood Vaccination Rates, a Rare Health Bright Spot in Struggling States, Are Slipping</div>
             <div class="news_post_description">
                 Catastrophic wildfires are common in California, and mental health specialists have become a key part of local governments’ response to extreme weather events, which scientists say are becoming more intense and frequent due to climate change.
                                Catastrophic wiCalifornia, and mental health specialists have become a key part of local governments’ response to extreme weather events, which scientists say are becoming more intense and frequent due to climate change.
- <button class="see-more">See more</button>
+<span style="color: rgb(12, 119, 172);">  See more</span>
+
             </div>
-            <div class="news_post_author">
+            <div class="news_post_author" style="margin-top: 8px;">
                 <span>By Dr. Robert Junior, John HHopkins Hospital</span>
             </div>
             <div class="news_post_author">
@@ -90,47 +98,46 @@
             </div>
         </div>
 
-        <!-- News Type B (3 articles, under Post Type A) -->
+
+<!-- TYPE B ===================================== -->
+
         <div class="news-type-b" style="padding-bottom: 10px;">
-            <img src="news.jpg" style="height: auto; margin-bottom: 10px;">
-            <div class="post-title">AI Technology Revolutionising Healthcare</div>
+            <img src="postb.jpg" style="height: 100px; margin: 12px 0px;">
+            <div class="course-title">Climate Change Threatens the Mental Well-Being of Youths. Here’s How To Help Them Cope.
+</div>
             <div class="news_post_author">
                 <span>By Dr. Robert Junior, John HHopkins Hospital</span>
             </div>
-            <div class="news_post_author">
-                <span>26 Jan 2022</span>
-            </div>
+            <div class="news_post_author"><span>26 Jan 2022</span></div>
         </div>
         
 
-                <div class="news-type-b" style="padding-bottom: 10px;">
-            <img src="news.jpg" style="height: auto; margin-bottom: 10px;">
-            <div class="post-title">AI Technology Revolutionising Healthcare</div>
+        <div class="news-type-b" style="padding-bottom: 10px;">
+            <img src="postb.jpg" style="height: 100px; margin: 12px 0px;">
+            <div class="course-title">Can Medical Schools Funnel More Doctors Into the Primary Care Pipeline?</div>
             <div class="news_post_author">
                 <span>By Dr. Robert Junior, John HHopkins Hospital</span>
             </div>
-            <div class="news_post_author">
-                <span>26 Jan 2022</span>
-            </div>
+            <div class="news_post_author"><span>26 Jan 2022</span></div>
         </div>
 
 
-                <div class="news-type-b" style="padding-bottom: 10px;">
-            <img src="news.jpg" style="height: auto; margin-bottom: 10px;">
-            <div class="post-title">AI Technology Revolutionising Healthcare</div>
+        <div class="news-type-b" style="padding-bottom: 10px;">
+            <img src="postb.jpg" style="height: 100px; margin: 12px 0px;">
+            <div class="course-title">Dogs Paired With Providers at Hospitals Help Ease Staff and Patient Stress
+</div>
             <div class="news_post_author">
                 <span>By Dr. Robert Junior, John HHopkins Hospital</span>
             </div>
-            <div class="news_post_author">
-                <span>26 Jan 2022</span>
-            </div>
+            <div class="news_post_author"><span>26 Jan 2022</span></div>
         </div>
 
-        <!-- Events Column (5 events) -->
+
+<!-- EVENTS ======================================= -->
         <div class="events-column">
             <!-- Event 1 -->
             <div class="event-card">
-                <div class="post-title" style="font-size: 14px;">CFA Certification Exam</div>
+                <div class="course-title" style="font-size: 14px;">CFA Certification Exam</div>
                 <div class="post-description">Learn about investment management in this virtual event.</div>
                 <div class="event-time-location">
                     <div>Time: 7:00 PM EST</div>
@@ -139,7 +146,7 @@
             </div>
             <!-- Event 2 -->
             <div class="event-card">
-                <div class="post-title" style="font-size: 14px;">Medical Research Summit</div>
+                <div class="course-title" style="font-size: 14px;">Medical Research Summit</div>
                 <div class="post-description">Discuss advancements in cancer treatment.</div>
                 <div class="event-time-location">
                     <div>Time: 9:00 AM AEST</div>
@@ -148,7 +155,7 @@
             </div>
             <!-- Event 3 -->
             <div class="event-card">
-                <div class="post-title" style="font-size: 14px;">Mental Health Awareness Workshop</div>
+                <div class="course-title" style="font-size: 14px;">Mental Health Awareness Workshop</div>
                 <div class="post-description">Strategies to improve mental well-being.</div>
                 <div class="event-time-location">
                     <div>Time: 2:00 PM BST</div>
@@ -157,7 +164,7 @@
             </div>
             <!-- Event 4 -->
             <div class="event-card">
-                <div class="post-title" style="font-size: 14px;">Virtual Health Symposium</div>
+                <div class="course-title" style="font-size: 14px;">Virtual Health Symposium</div>
                 <div class="post-description">Global health experts discuss the future of healthcare.</div>
                 <div class="event-time-location">
                     <div>Time: 11:00 AM CST</div>
@@ -167,7 +174,7 @@
 
             <!-- Event 5 -->
             <div class="event-card">
-                <div class="post-title" style="font-size: 14px;">Annual Medical Conference</div>
+                <div class="course-title" style="font-size: 14px;">Annual Medical Conference</div>
                 <div class="post-description">Join the top medical professionals in the industry.</div>
                 <div class="event-time-location">
                     <div>Time: 3:00 PM PST</div>
@@ -318,234 +325,8 @@
 
             <div class="content_columns">
                 <div class="infinite_scrolling">
-                    <div class="post">
-                        <div class="post-header">
-                            <img src="ava.jpg">
-                            <div>
-                                <div class="author">Robert Pattinson</div>
-                                <div class="time">2 hours ago</div>
-                            </div>
-                        </div>
-                        <img class="post-image" src="robert-katzki-jbtfM0XBeRc-unsplash.jpg" style="height: 300px; width: auto; margin-bottom: 20px;">
-                        <div class="post-title">Post Title Goes Here</div>
-                        <div class="post-description">
-                            This is a sample post description. It will be truncated if it's too long. Click "See more" to expand. This is a sample post description. It will be truncated if it's too long. Click "See more" to expand. This is a sample post description. It will be truncated if it's too long. Click "See more" to expand.
-                            <button class="see-more">See more</button>
-                        </div>
-                        <div class="post-icons">
-                            <img src="heart%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
-                            <img src="message-square-more.png" style="opacity: 40%; height: 15px; width: auto;">
-                            <img src="share-2%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
-                            <img src="bookmark%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
-                        </div>
-                    </div>
 
 
-                                        <div class="post">
-                        <div class="post-header">
-                            <img src="ava.jpg">
-                            <div>
-                                <div class="author">Robert Pattinson</div>
-                                <div class="time">2 hours ago</div>
-                            </div>
-                        </div>
-                        <img class="post-image" src="robert-katzki-jbtfM0XBeRc-unsplash.jpg" style="height: 300px; width: auto; margin-bottom: 20px;">
-                        <div class="post-title">Post Title Goes Here</div>
-                        <div class="post-description">
-                            This is a sample post description. It will be truncated if it's too long. Click "See more" to expand. This is a sample post description. It will be truncated if it's too long. Click "See more" to expand. This is a sample post description. It will be truncated if it's too long. Click "See more" to expand.
-                            <button class="see-more">See more</button>
-                        </div>
-                        <div class="post-icons">
-                            <img src="heart%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
-                            <img src="message-square-more.png" style="opacity: 40%; height: 15px; width: auto;">
-                            <img src="share-2%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
-                            <img src="bookmark%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
-                        </div>
-                    </div>
-
-
-
-                                        <div class="post">
-                        <div class="post-header">
-                            <img src="ava.jpg">
-                            <div>
-                                <div class="author">Robert Pattinson</div>
-                                <div class="time">2 hours ago</div>
-                            </div>
-                        </div>
-                        <img class="post-image" src="robert-katzki-jbtfM0XBeRc-unsplash.jpg" style="height: 300px; width: auto; margin-bottom: 20px;">
-                        <div class="post-title">Post Title Goes Here</div>
-                        <div class="post-description">
-                            This is a sample post description. It will be truncated if it's too long. Click "See more" to expand. This is a sample post description. It will be truncated if it's too long. Click "See more" to expand. This is a sample post description. It will be truncated if it's too long. Click "See more" to expand.
-                            <button class="see-more">See more</button>
-                        </div>
-                        <div class="post-icons">
-                            <img src="heart%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
-                            <img src="message-square-more.png" style="opacity: 40%; height: 15px; width: auto;">
-                            <img src="share-2%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
-                            <img src="bookmark%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
-                        </div>
-                    </div>
-
-
-                                        <div class="post">
-                        <div class="post-header">
-                            <img src="ava.jpg">
-                            <div>
-                                <div class="author">Robert Pattinson</div>
-                                <div class="time">2 hours ago</div>
-                            </div>
-                        </div>
-                        <img class="post-image" src="robert-katzki-jbtfM0XBeRc-unsplash.jpg" style="height: 300px; width: auto; margin-bottom: 20px;">
-                        <div class="post-title">Post Title Goes Here</div>
-                        <div class="post-description">
-                            This is a sample post description. It will be truncated if it's too long. Click "See more" to expand. This is a sample post description. It will be truncated if it's too long. Click "See more" to expand. This is a sample post description. It will be truncated if it's too long. Click "See more" to expand.
-                            <button class="see-more">See more</button>
-                        </div>
-                        <div class="post-icons">
-                            <img src="heart%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
-                            <img src="message-square-more.png" style="opacity: 40%; height: 15px; width: auto;">
-                            <img src="share-2%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
-                            <img src="bookmark%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
-                        </div>
-                    </div>
-
-
-                                        <div class="post">
-                        <div class="post-header">
-                            <img src="ava.jpg">
-                            <div>
-                                <div class="author">Robert Pattinson</div>
-                                <div class="time">2 hours ago</div>
-                            </div>
-                        </div>
-                        <img class="post-image" src="robert-katzki-jbtfM0XBeRc-unsplash.jpg" style="height: 300px; width: auto; margin-bottom: 20px;">
-                        <div class="post-title">Post Title Goes Here</div>
-                        <div class="post-description">
-                            This is a sample post description. It will be truncated if it's too long. Click "See more" to expand. This is a sample post description. It will be truncated if it's too long. Click "See more" to expand. This is a sample post description. It will be truncated if it's too long. Click "See more" to expand.
-                            <button class="see-more">See more</button>
-                        </div>
-                        <div class="post-icons">
-                            <img src="heart%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
-                            <img src="message-square-more.png" style="opacity: 40%; height: 15px; width: auto;">
-                            <img src="share-2%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
-                            <img src="bookmark%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
-                        </div>
-                    </div>
-
-
-                                        <div class="post">
-                        <div class="post-header">
-                            <img src="ava.jpg">
-                            <div>
-                                <div class="author">Robert Pattinson</div>
-                                <div class="time">2 hours ago</div>
-                            </div>
-                        </div>
-                        <img class="post-image" src="robert-katzki-jbtfM0XBeRc-unsplash.jpg" style="height: 300px; width: auto; margin-bottom: 20px;">
-                        <div class="post-title">Post Title Goes Here</div>
-                        <div class="post-description">
-                            This is a sample post description. It will be truncated if it's too long. Click "See more" to expand. This is a sample post description. It will be truncated if it's too long. Click "See more" to expand. This is a sample post description. It will be truncated if it's too long. Click "See more" to expand.
-                            <button class="see-more">See more</button>
-                        </div>
-                        <div class="post-icons">
-                            <img src="heart%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
-                            <img src="message-square-more.png" style="opacity: 40%; height: 15px; width: auto;">
-                            <img src="share-2%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
-                            <img src="bookmark%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
-                        </div>
-                    </div>
-
-                                        <div class="post">
-                        <div class="post-header">
-                            <img src="ava.jpg">
-                            <div>
-                                <div class="author">Robert Pattinson</div>
-                                <div class="time">2 hours ago</div>
-                            </div>
-                        </div>
-                        <img class="post-image" src="robert-katzki-jbtfM0XBeRc-unsplash.jpg" style="height: 300px; width: auto; margin-bottom: 20px;">
-                        <div class="post-title">Post Title Goes Here</div>
-                        <div class="post-description">
-                            This is a sample post description. It will be truncated if it's too long. Click "See more" to expand. This is a sample post description. It will be truncated if it's too long. Click "See more" to expand. This is a sample post description. It will be truncated if it's too long. Click "See more" to expand.
-                            <button class="see-more">See more</button>
-                        </div>
-                        <div class="post-icons">
-                            <img src="heart%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
-                            <img src="message-square-more.png" style="opacity: 40%; height: 15px; width: auto;">
-                            <img src="share-2%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
-                            <img src="bookmark%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
-                        </div>
-                    </div>
-
-
-                                        <div class="post">
-                        <div class="post-header">
-                            <img src="ava.jpg">
-                            <div>
-                                <div class="author">Robert Pattinson</div>
-                                <div class="time">2 hours ago</div>
-                            </div>
-                        </div>
-                        <img class="post-image" src="robert-katzki-jbtfM0XBeRc-unsplash.jpg" style="height: 300px; width: auto; margin-bottom: 20px;">
-                        <div class="post-title">Post Title Goes Here</div>
-                        <div class="post-description">
-                            This is a sample post description. It will be truncated if it's too long. Click "See more" to expand. This is a sample post description. It will be truncated if it's too long. Click "See more" to expand. This is a sample post description. It will be truncated if it's too long. Click "See more" to expand.
-                            <button class="see-more">See more</button>
-                        </div>
-                        <div class="post-icons">
-                            <img src="heart%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
-                            <img src="message-square-more.png" style="opacity: 40%; height: 15px; width: auto;">
-                            <img src="share-2%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
-                            <img src="bookmark%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
-                        </div>
-                    </div>
-
-
-                                        <div class="post">
-                        <div class="post-header">
-                            <img src="ava.jpg">
-                            <div>
-                                <div class="author">Robert Pattinson</div>
-                                <div class="time">2 hours ago</div>
-                            </div>
-                        </div>
-                        <img class="post-image" src="robert-katzki-jbtfM0XBeRc-unsplash.jpg" style="height: 300px; width: auto; margin-bottom: 20px;">
-                        <div class="post-title">Post Title Goes Here</div>
-                        <div class="post-description">
-                            This is a sample post description. It will be truncated if it's too long. Click "See more" to expand. This is a sample post description. It will be truncated if it's too long. Click "See more" to expand. This is a sample post description. It will be truncated if it's too long. Click "See more" to expand.
-                            <button class="see-more">See more</button>
-                        </div>
-                        <div class="post-icons">
-                            <img src="heart%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
-                            <img src="message-square-more.png" style="opacity: 40%; height: 15px; width: auto;">
-                            <img src="share-2%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
-                            <img src="bookmark%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
-                        </div>
-                    </div>
-
-
-                                        <div class="post">
-                        <div class="post-header">
-                            <img src="ava.jpg">
-                            <div>
-                                <div class="author">Robert Pattinson</div>
-                                <div class="time">2 hours ago</div>
-                            </div>
-                        </div>
-                        <img class="post-image" src="robert-katzki-jbtfM0XBeRc-unsplash.jpg" style="height: 300px; width: auto; margin-bottom: 20px;">
-                        <div class="post-title">Post Title Goes Here</div>
-                        <div class="post-description">
-                            This is a sample post description. It will be truncated if it's too long. Click "See more" to expand. This is a sample post description. It will be truncated if it's too long. Click "See more" to expand. This is a sample post description. It will be truncated if it's too long. Click "See more" to expand.
-                            <button class="see-more">See more</button>
-                        </div>
-                        <div class="post-icons">
-                            <img src="heart%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
-                            <img src="message-square-more.png" style="opacity: 40%; height: 15px; width: auto;">
-                            <img src="share-2%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
-                            <img src="bookmark%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
-                        </div>
-                    </div>
 
                     <div class="post">
                         <div class="post-header">
@@ -555,26 +336,258 @@
                                 <div class="time">2 hours ago</div>
                             </div>
                         </div>
-                        <img class="post-image" src="robert-katzki-jbtfM0XBeRc-unsplash.jpg" style="height: 300px; width: auto; margin-bottom: 20px;">
+                        <img class="post-image" src="robert-katzki-jbtfM0XBeRc-unsplash.jpg" style="height: 250px; width: auto; margin-bottom: 20px;">
                         <div class="post-title">Post Title Goes Here</div>
-                        <div class="post-description">
-                            This is a sample post description. It will be truncated if it's too long. Click "See more" to expand. This is a sample post description. It will be truncated if it's too long. Click "See more" to expand. This is a sample post description. It will be truncated if it's too long. Click "See more" to expand.
-                            <button class="see-more">See more</button>
-                        </div>
-                        <div class="post-icons">
+                       
+
+<div class="post-description">
+    <span class="description-text">This is a sample post description. It will be truncated if it's too long. Click "See more" to expand.
+                            This is a sample post description...
+    </span>
+<span style="color: rgb(12, 119, 172);">See more</span></div>
+        <div class="post-icons">
                             <img src="heart%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
                             <img src="message-square-more.png" style="opacity: 40%; height: 15px; width: auto;">
                             <img src="share-2%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
                             <img src="bookmark%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
                         </div>
                     </div>
-                </div>
 
+
+                    
+                    
+                    <div class="post">
+                        <div class="post-header">
+                            <img src="ava.jpg">
+                            <div>
+                                <div class="author">Robert Pattinson</div>
+                                <div class="time">2 hours ago</div>
+                            </div>
+                        </div>
+                        <img class="post-image" src="robert-katzki-jbtfM0XBeRc-unsplash.jpg" style="height: 250px; width: auto; margin-bottom: 20px;">
+                        <div class="post-title">Post Title Goes Here</div>
+                       
+
+<div class="post-description">
+    <span class="description-text">This is a sample post description. It will be truncated if it's too long. Click "See more" to expand.
+                            This is a sample post description...
+    </span>
+<span style="color: rgb(12, 119, 172);">See more</span></div>
+        <div class="post-icons">
+                            <img src="heart%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
+                            <img src="message-square-more.png" style="opacity: 40%; height: 15px; width: auto;">
+                            <img src="share-2%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
+                            <img src="bookmark%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
+                        </div>
+                    </div>
+
+
+                    
+                    <div class="post">
+                        <div class="post-header">
+                            <img src="ava.jpg">
+                            <div>
+                                <div class="author">Robert Pattinson</div>
+                                <div class="time">2 hours ago</div>
+                            </div>
+                        </div>
+                        <img class="post-image" src="robert-katzki-jbtfM0XBeRc-unsplash.jpg" style="height: 250px; width: auto; margin-bottom: 20px;">
+                        <div class="post-title">Post Title Goes Here</div>
+                       
+
+<div class="post-description">
+    <span class="description-text">This is a sample post description. It will be truncated if it's too long. Click "See more" to expand.
+                            This is a sample post description...
+    </span>
+<span style="color: rgb(12, 119, 172);">See more</span></div>
+        <div class="post-icons">
+                            <img src="heart%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
+                            <img src="message-square-more.png" style="opacity: 40%; height: 15px; width: auto;">
+                            <img src="share-2%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
+                            <img src="bookmark%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
+                        </div>
+                    </div>
+
+
+                    
+                    <div class="post">
+                        <div class="post-header">
+                            <img src="ava.jpg">
+                            <div>
+                                <div class="author">Robert Pattinson</div>
+                                <div class="time">2 hours ago</div>
+                            </div>
+                        </div>
+                        <img class="post-image" src="robert-katzki-jbtfM0XBeRc-unsplash.jpg" style="height: 250px; width: auto; margin-bottom: 20px;">
+                        <div class="post-title">Post Title Goes Here</div>
+                       
+
+<div class="post-description">
+    <span class="description-text">This is a sample post description. It will be truncated if it's too long. Click "See more" to expand.
+                            This is a sample post description...
+    </span>
+<span style="color: rgb(12, 119, 172);">See more</span></div>
+        <div class="post-icons">
+                            <img src="heart%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
+                            <img src="message-square-more.png" style="opacity: 40%; height: 15px; width: auto;">
+                            <img src="share-2%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
+                            <img src="bookmark%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
+                        </div>
+                    </div>
+
+
+                                        <div class="post">
+                        <div class="post-header">
+                            <img src="ava.jpg">
+                            <div>
+                                <div class="author">Robert Pattinson</div>
+                                <div class="time">2 hours ago</div>
+                            </div>
+                        </div>
+                        <img class="post-image" src="robert-katzki-jbtfM0XBeRc-unsplash.jpg" style="height: 250px; width: auto; margin-bottom: 20px;">
+                        <div class="post-title">Post Title Goes Here</div>
+                       
+
+<div class="post-description">
+    <span class="description-text">This is a sample post description. It will be truncated if it's too long. Click "See more" to expand.
+                            This is a sample post description...
+    </span>
+<span style="color: rgb(12, 119, 172);">See more</span></div>
+        <div class="post-icons">
+                            <img src="heart%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
+                            <img src="message-square-more.png" style="opacity: 40%; height: 15px; width: auto;">
+                            <img src="share-2%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
+                            <img src="bookmark%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
+                        </div>
+                    </div>
+
+
+                                        <div class="post">
+                        <div class="post-header">
+                            <img src="ava.jpg">
+                            <div>
+                                <div class="author">Robert Pattinson</div>
+                                <div class="time">2 hours ago</div>
+                            </div>
+                        </div>
+                        <img class="post-image" src="robert-katzki-jbtfM0XBeRc-unsplash.jpg" style="height: 250px; width: auto; margin-bottom: 20px;">
+                        <div class="post-title">Post Title Goes Here</div>
+                       
+
+<div class="post-description">
+    <span class="description-text">This is a sample post description. It will be truncated if it's too long. Click "See more" to expand.
+                            This is a sample post description...
+    </span>
+<span style="color: rgb(12, 119, 172);">See more</span></div>
+        <div class="post-icons">
+                            <img src="heart%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
+                            <img src="message-square-more.png" style="opacity: 40%; height: 15px; width: auto;">
+                            <img src="share-2%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
+                            <img src="bookmark%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
+                        </div>
+                    </div>
+
+
+                                        <div class="post">
+                        <div class="post-header">
+                            <img src="ava.jpg">
+                            <div>
+                                <div class="author">Robert Pattinson</div>
+                                <div class="time">2 hours ago</div>
+                            </div>
+                        </div>
+                        <img class="post-image" src="robert-katzki-jbtfM0XBeRc-unsplash.jpg" style="height: 250px; width: auto; margin-bottom: 20px;">
+                        <div class="post-title">Post Title Goes Here</div>
+                       
+
+<div class="post-description">
+    <span class="description-text">This is a sample post description. It will be truncated if it's too long. Click "See more" to expand.
+                            This is a sample post description...
+    </span>
+<span style="color: rgb(12, 119, 172);">See more</span></div>
+        <div class="post-icons">
+                            <img src="heart%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
+                            <img src="message-square-more.png" style="opacity: 40%; height: 15px; width: auto;">
+                            <img src="share-2%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
+                            <img src="bookmark%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
+                        </div>
+                    </div>
+
+
+
+                                        <div class="post">
+                        <div class="post-header">
+                            <img src="ava.jpg">
+                            <div>
+                                <div class="author">Robert Pattinson</div>
+                                <div class="time">2 hours ago</div>
+                            </div>
+                        </div>
+                        <img class="post-image" src="robert-katzki-jbtfM0XBeRc-unsplash.jpg" style="height: 250px; width: auto; margin-bottom: 20px;">
+                        <div class="post-title">Post Title Goes Here</div>
+                       
+
+<div class="post-description">
+    <span class="description-text">This is a sample post description. It will be truncated if it's too long. Click "See more" to expand.
+                            This is a sample post description...
+    </span>
+<span style="color: rgb(12, 119, 172);">See more</span></div>
+        <div class="post-icons">
+                            <img src="heart%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
+                            <img src="message-square-more.png" style="opacity: 40%; height: 15px; width: auto;">
+                            <img src="share-2%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
+                            <img src="bookmark%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
+                        </div>
+                    </div>
+
+
+
+                                        <div class="post">
+                        <div class="post-header">
+                            <img src="ava.jpg">
+                            <div>
+                                <div class="author">Robert Pattinson</div>
+                                <div class="time">2 hours ago</div>
+                            </div>
+                        </div>
+                        <img class="post-image" src="robert-katzki-jbtfM0XBeRc-unsplash.jpg" style="height: 250px; width: auto; margin-bottom: 20px;">
+                        <div class="post-title">Post Title Goes Here</div>
+                       
+
+<div class="post-description">
+    <span class="description-text">This is a sample post description. It will be truncated if it's too long. Click "See more" to expand.
+                            This is a sample post description...
+    </span>
+<span style="color: rgb(12, 119, 172);">See more</span></div>
+        <div class="post-icons">
+                            <img src="heart%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
+                            <img src="message-square-more.png" style="opacity: 40%; height: 15px; width: auto;">
+                            <img src="share-2%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
+                            <img src="bookmark%20(1).png" style="opacity: 40%; height: 15px; width: auto;">
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    
+
+</div>  
 
 
 
                 <div class="who_to_follow_column">
                     <h2>Who to follow</h2>
+
                     <div class="who_to_follow">
                         <img src="ava.jpg">
                         <div>Person 1<br>404 followers</div>
