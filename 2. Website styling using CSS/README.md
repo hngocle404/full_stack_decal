@@ -1,4 +1,4 @@
-Link to webpage: https://hngocle404.github.io/full_stack_decal/2.%20Website%20styling%20using%20CSS/gnf.html
+Link to webpage: https://hngocle404.github.io/full_stack_decal/2.%20Website%20styling%20using%20CSS/
 
 ## Objectives
 #### HTML
