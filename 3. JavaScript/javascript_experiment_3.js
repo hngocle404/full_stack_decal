@@ -55,19 +55,3 @@ let commoners = [
 ];
 
 console.log(commoners[0].key());
-
-        .search-bar {
-            flex-grow: 10;
-            margin: 0 16px;
-            background-color: #d1d1d1;
-            border: none;
-        }
-
-        .search-bar input {
-            width: 50%;
-            height: max-content;
-            padding: 8px;
-            border-radius: 20px;
-            background-color: #d1d1d1;
-            border: none;
-        }
